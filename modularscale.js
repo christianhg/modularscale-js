@@ -1,21 +1,22 @@
-// Values
-var minorSecond   = 16/15;
-var majorSecond   = 1.125;
-var minorThird    = 1.2;
-var majorThird    = 1.25;
-var perfectFourth = 4/3;
-var augFourth     = 1.414;
-var perfectFifth  = 1.5;
-var minorSixth    = 1.6;
-var goldenSection = 1.61803398875;
-var majorSixth    = 5/3;
-var minorSeventh  = 16/9;
-var majorSeventh  = 1.875;
-var octave        = 2;
-var majorTenth    = 2.5;
-var majorEleventh = 8/3;
-var majorTwelfth  = 3;
-var doubleOctave  = 4;
+var ratios = {
+  minorSecond: 16/15,
+  majorSecond: 1.125,
+  minorThird: 1.2,
+  majorThird: 1.25,
+  perfectFourth: 4/3,
+  augFourth: 1.414,
+  perfectFifth: 1.5,
+  minorSixth: 1.6,
+  goldenSection: 1.61803398875,
+  majorSixth: 5/3,
+  minorSeventh: 16/9,
+  majorSeventh: 1.875,
+  octave: 2,
+  majorTenth: 2.5,
+  majorEleventh: 8/3,
+  majorTwelfth: 3,
+  doubleOctave: 4
+};
 
 // Function settings
 var modularscale = {
@@ -74,4 +75,4 @@ function ms(v,settings) {
   return msFunction(v,settings);
 }
 
-module.exports = ms;
+module.exports = { ms, ratios };
